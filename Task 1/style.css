@@ -1,10 +1,12 @@
 * {
+    /* page style */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
   
 body {
+    /* body style */
     width: 80%;
     margin: 0 auto;
     font-family: Arial, sans-serif;
@@ -12,12 +14,14 @@ body {
 }
 
 section img {
+    /* image per section */
     width: calc(100% / 3);
     float: left;
     background-color: white;
 }
 
 .logo {
+    /* style for the logo on the top left */
     background-color: white;
     padding-bottom: 18px;
     padding-top: 18px;
@@ -26,10 +30,12 @@ section img {
 }
 
 header, .lorem {
+    /* background color for the paragraph */
     background-color: white;
 }
 
 .lorem {
+    /* style of the text */
     color: black;
     float: center;
     text-align: center;
@@ -38,6 +44,7 @@ header, .lorem {
 }
 
 footer {
+    /* footer's text color and setting */
     background-color: black;
     color: white;
     font-size: 16px;
@@ -46,6 +53,7 @@ footer {
     padding-bottom: 10px;
 }
 
+/* Responsive web layout for the corresponding screen size */
 @media (min-width: 1024px) {
     body {
         width: 1024px;

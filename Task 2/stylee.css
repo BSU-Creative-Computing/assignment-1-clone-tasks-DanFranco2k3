@@ -1,21 +1,24 @@
 header{
     width: 100%;
 }
-
+/* Setting the color of the navbar  */
 .left-nav {
   background-color: #1e90ff;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   color: white;
+  width: 100%;
 }
 
+/* Aligning the search bar */
 .mid-nav {
 text-align: center;
 align-self: center;
 
 }
 
+/* Non-listing the Movies, Register, Etc.  */
 .right-nav, .mid-nav {
     list-style-type: none;
 }
@@ -25,6 +28,7 @@ ul{
     text-align: center;
     padding: 10px;
     text-decoration-style: none;
+    justify-content: space-between;
 }
 
 li{
@@ -40,7 +44,7 @@ a{
 .right-nav a:hover, .mid-nav a:hover {
 color: black;
 }
-
+/* Grid displaying */
 .container {
 display: grid;
 grid-template-columns: 55% 45%;
@@ -48,12 +52,12 @@ font-size: 14px;
 margin-right:15%;
 margin-left: 15%;
 }
-
+/* Image inside the container (Avengers Poster) */
 .container img {
     width: 100%;
 }
 
-
+/* Grid is used to align the side movies */
 .the_movie_side {
     display: grid;
     margin: 20px;
@@ -111,6 +115,8 @@ button {
     color: white;
     justify-content: flex-end;
 }
+
+/* Responsive web layout for the corresponding screen size */
 @media (width<=1280px){
     .the_movie_1 {
         width: 1280px;
@@ -146,6 +152,9 @@ button {
     }
     .themovie_4{
         margin-top: 0%;
+    }
+    .mid-nav{
+        display: none;
     }
 }
 @media (width<=480px){
